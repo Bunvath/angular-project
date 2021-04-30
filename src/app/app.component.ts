@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-ly';
+  post = {
+    title: "Title",
+    isFavorite:false
+  }
+  onFavoriteChange(isFavorite:any){
+    console.log("Favourite change",isFavorite);
+    console.log(isFavorite)
+  }
 }
