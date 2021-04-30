@@ -9,7 +9,7 @@ import { Component, OnInit,Input,Output,EventEmitter, ViewEncapsulation } from '
 })
 export class FavoriteComponent implements OnInit {
   @Input('isFavorite') isFavorite?: boolean
-  @Output() change = new EventEmitter();
+  @Output() change = new EventEmitter<any>();
   constructor() { }
 
   ngOnInit(): void {
