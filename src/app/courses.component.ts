@@ -4,13 +4,9 @@ import { Component, NgModule } from '@angular/core';
     selector: "courses",
     template:
             `
+            <button class="btn btn-primary">Save</button>
             <input  [(ngModel)]="email" (keyup.enter) = " onKeyUp()"/> 
-            {{course.title |uppercase}}<br/>
-            {{course.rating | number:'1.2-2'}}<br/>
-            {{course.students| number}}<br/>
-            {{course.price|currency:'AUD':true}}<br/>
-            {{course.releaseDate| date}}<br/> 
-            {{text|summary:4}}
+            
 
     `
     

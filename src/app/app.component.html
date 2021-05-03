@@ -1,4 +1,62 @@
-<h1>Ly Bunvath</h1>
-<h2>{{post.isFavorite}}</h2>
-<app-favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChange($event)"></app-favorite>
-<!-- <courses></courses> -->
+<!-- <app-panel-component>
+    <ng-container class="heading">
+    </ng-container>
+    <div class = "body">
+        <p>..</p>
+    </div>
+</app-panel-component> -->
+<!-- <div *ngIf="course.length > 0;then coursesList else noCourses">
+    List of courses
+</div>
+<ng-template #coursesList>
+    {{course[1]}}
+    list of the course
+</ng-template>
+<ng-template #noCourses>
+    no course yet
+</ng-template> -->
+<!-- <div [hidden]="course.length == 0">
+    List of Course
+</div>
+<div [hidden]="course.length >0">
+    Not have Course yet
+</div> -->
+
+<!-- <ul class="nav nav-pills ">
+    <li><a  [class]="viewMode=='map' ? 'nav-link active':'nav-link'" (click) = "viewMode='map'">Map view</a></li>
+    <li class="nav-item"><a [class]="viewMode=='list' ? 'nav-link active':'nav-link'" (click) = "viewMode='list'">List view</a></li>
+</ul>
+<div [ngSwitch]="viewMode">
+    <div *ngSwitchCase="'map'">Map View Content</div>
+    <div *ngSwitchCase="'list'">List View Content</div>
+    <div *ngSwitchDefault></div>
+</div> -->
+
+<!-- <button (click)="onAdd()">
+    add
+
+</button>
+<ul>
+    <li *ngFor="let course of courses; even as isEven ">
+        {{course.name}}, {{course.id}} 
+        <button (click)="onRemove(course)">remove</button>
+        <button (click)="onChange(course)">update</button>
+    </li>
+    
+</ul> -->
+
+<!-- <button (click) = "loadCourse()"> load</button>
+<ul>
+    <li *ngFor="let course of courses; trackBy:trackCourse">
+        {{course.name}}
+    </li>
+</ul> -->
+
+<!-- 
+<input type="text" [appInputFormat] = "'uppercase'" > -->
+<!-- <contact-form></contact-form> -->
+<!-- <app-signup-form></app-signup-form> -->
+<!-- <new-course-form></new-course-form> -->
+<posts></posts>
+
+

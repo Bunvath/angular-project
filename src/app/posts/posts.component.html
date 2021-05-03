@@ -1,0 +1,13 @@
+
+<ul class="list-group">
+    <input #title (keyup.enter)="addNew(title)" id="title" type="text" class="form-control">
+    <li *ngFor="let item of posts;index as i " 
+        class="list-group-item"
+        >
+        <button (click) = "update(item)" class="btn btn-primary">Update</button>
+        <button (click) = "remove(item)" class="btn btn-primary">Remove</button>
+        {{item.title}}
+    </li>
+  
+    
+</ul>

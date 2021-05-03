@@ -1,0 +1,9 @@
+<form>
+    <input  class="form-control" type="text" (keyup.enter)="addToArray(topic)" #topic>
+    <ul 
+        class="list-group-item"
+        *ngFor="let item of getArray;index as i"
+        (click)="removeElement(i)">
+        {{item.value}}
+    </ul>
+</form>
